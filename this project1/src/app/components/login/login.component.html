@@ -1,0 +1,9 @@
+<p> login</p>
+<a routerLink="/Home">Home</a>
+<input name="emil" class="form-control" type="email" [(ngModel)]="user.MailU" placeholder="מייל" id="emailRegister"><br/>
+<input name="pass" class="form-control" type="password" [(ngModel)]="user.PasswordU" placeholder="סיסמא" id="passwordRegister"><br/>
+<button  type="submit" id="submitRegister" [disabled]="" class="btn btn-primary" (click)="login()">הכנס</button>
+<!-- האם צריך לציין מתי יראה את המערך רק לאחר שהמשתמש נכנס למערכת -->
+<div  *ngFor="let m of minyanim ">
+    {{m.AdressDsc}} {{m.NumOfPeople}}
+</div>

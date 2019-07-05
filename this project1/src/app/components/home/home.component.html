@@ -1,0 +1,8 @@
+<!-- <input type="button" value="הוסף מנין" (click)="addMinyan()"> -->
+
+<input type="button" value="כניסה למערכת" (click)="enter()">
+<div *ngFor="let pray of prayers"> 
+        {{pray.AdressDsc}}   {{pray.NumOfPeople}} 
+   <div *ngIf="IsGabay()">
+        <div (click)="f(pray)"> לעריכה</div></div>
+</div>
